@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:lang="${#locale.language}">
+<head>
+    <meta charset="UTF-8">
+    <title>Cryptocurrency Price Checker</title>
+</head>
+<body>
+<h1>Select Cryptocurrency</h1>
+<form action="/crypto-price" method="get">
+    <select name="cryptoSymbol">
+        <option value="bitcoin">Bitcoin</option>
+        <option value="ethereum">Ethereum</option>
+        <!-- Add more cryptocurrencies as needed -->
+    </select>
+    <br><br>
+    <label >IP Address(Optional):</label>
+    <input type="text" name="ipAddress" />
+    <br><br>
+    <button type="submit">Check Price</button>
+</form>
+</body>
+</html>
